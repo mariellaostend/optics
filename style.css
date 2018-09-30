@@ -134,6 +134,11 @@ justify-content: space-between;
 footer {
   margin-top: 5rem;
   align-items: center;
+
+}
+
+footer .container{
+  background-color: azure;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
