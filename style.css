@@ -1,5 +1,7 @@
 html {
-  font-size: 18;
+  font-size: 18px;
+  font-family: "Helvetica" sans-serif;
+  background-color: white;
 }
 
 body {
@@ -144,12 +146,14 @@ justify-content: space-between;
 .info .descr{
   width: 35%;
   font-size: 1rem;
+  font-family: "Helvetica";
 }
 
 /* ----------footer--------------*/
 footer {
   margin-top: 5rem;
   align-items: center;
+  font-family: "Helvetica"
 
 }
 
@@ -157,6 +161,7 @@ footer .container{
   background-color: azure;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-family: "Helvetica"
 }
 
 footer img{
