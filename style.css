@@ -7,7 +7,7 @@ body {
   line-height: 1.4;
 }
 
-
+/* ----------baner--------------*/
 .banner {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
   height: 30rem;
@@ -59,19 +59,87 @@ li {
   padding-bottom: 1rem;
 }
 
+.mobile-nav {
+  display:none;
+}
+
+.headline-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .headline {
   background-color: white;
   position:relative;
-  top: 10rem;
-  right: -28rem;
-  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  width:auto;
+  text-align: right;
+}
+
+.headline H1{
   font-family: "Helvetica";
   font-weight: bold;
   font-size: 2rem;
+  padding: 1.5rem 5rem;
   line-height: 1.2;
-  width:24rem;
-  text-align: right;
 }
+
+@media only screen and (max-width: 960px) {
+  .banner {
+    height: 22rem;
+  }
+
+.container {
+  width:100%;
+}
+
+.headline {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+.headline H1{
+  font-size: 1.33rem;
+  padding: 0.75rem 4rem;
+}
+}
+
+@media only screen and (max-width: 800px) {
+
+.banner {
+  height: 17rem;
+  background-position: 20%;
+}
+
+nav ul {
+  display:none;
+}
+.mobile-nav {
+  display:block;
+  text-align: center;
+  font-family: Helvetica;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.headline {
+    margin-top: 9rem;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+
+}
+
+
+
+
+/* ----------products--------------*/
 
 .products {
   display:flex;
@@ -96,8 +164,6 @@ justify-content: space-between;
   align-items: flex-start;
 }
 
-
-
 .description {
   font-family: "Helvetica";
   font-size: 1rem;
@@ -107,6 +173,7 @@ justify-content: space-between;
   align-items: center;
 }
 
+/* ----------business info--------------*/
 .business-info {
   display: flex;
   flex-direction: row;
@@ -131,6 +198,7 @@ justify-content: space-between;
   font-size: 1rem;
 }
 
+/* ----------footer--------------*/
 footer {
   margin-top: 5rem;
   align-items: center;
